@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./icons/pokeball.png">
+    <title>Pokedéx</title>
+</head>
+<body onload="init()">
+    <header>
+        <div class="header-content">
+            <h1 class="title"><a href="https://samuel-zacharias.developerakademie.net/pokedex/">Pokedéx</a></h1>
+            <input type="text" id="search-input" class="search-input" placeholder="Search Pokémon...">
+        </div>
+    </header>
+    <div class="container" id="container">
+        <div id="card-container" class="card-container">
+            <button id="scroll-top-button" class="scroll-top-button">Scroll to Top</button>
+        </div>
+        <div class="hidden-card" id="popup">
+            <button id="prev-button" class="nav-button">&lt;</button>
+            <button id="next-button" class="nav-button">&gt;</button>
+            <div id="popup-content" class="popup-content"></div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <button class="bottom-button">Load more Pokémon</button>
+</body>
+</html>
