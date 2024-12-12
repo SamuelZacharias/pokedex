@@ -90,8 +90,8 @@ async function openPopup(index) {
 }
 
 function popUpStatus() {
-    const popupImage = document.getElementById('popup-image');
-    popupImage.addEventListener('click', closePopup);
+    const overlay = document.getElementById('overlay');
+    overlay.addEventListener('click', closePopup);
     popup.style.display = 'block';
     overlay.style.display = 'block';
     document.body.classList.add('no-scroll');
